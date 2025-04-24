@@ -1,0 +1,67 @@
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import HeroImg1 from "../../assets/images/it-outsourcing-company-worldwide.jpg";
+import HeroImg2 from "../../assets/images/icreativez-news-events.jpg";
+import HeroImg3 from "../../assets/images/marketer.jpg";
+import "./Hero.css";
+import CustomButton from "../button/Button";
+
+const Hero = () => {
+  const images = [HeroImg1, HeroImg2, HeroImg3];
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const zoomRef = useRef([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    gsap.fromTo(
+      zoomRef.current[currentSlide],
+      { scale: 1.2 },
+      { scale: 1, duration: 12, ease: "power2.out", yoyo: true, repeat: -1 }
+    );
+  }, [currentSlide]);
+
+  return (
+    <div className="hero-container">
+      <div className="hero-slider-wrapper">
+        {images.map((img, index) => (
+          <img
+            key={index}
+            ref={(el) => (zoomRef.current[index] = el)}
+            src={img}
+            alt={`Slide ${index + 1}`}
+            className={`hero-image ${index === currentSlide ? "active" : ""}`}
+            style={{ opacity: index === currentSlide ? 1 : 0 }}
+          />
+        ))}
+        <div className="hero-overlay" />
+      </div>
+
+      <div className="hero-content">
+        <h1>Your Global IT Partner</h1>
+        <p>
+          We provide reliable IT outsourcing solutions to businesses around the
+          world. Let us help you scale with ease and innovation.
+        </p>
+        <CustomButton className="primary-btn">Get in Touch</CustomButton>
+      </div>
+
+      <div className="hero-dots">
+        {images.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentSlide === index ? "active" : ""}`}
+            onClick={() => setCurrentSlide(index)}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

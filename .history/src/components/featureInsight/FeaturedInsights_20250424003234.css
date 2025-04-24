@@ -1,0 +1,123 @@
+ .featured-insights {
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 130px 0 90px 40px;
+     gap: 20px;
+     background: linear-gradient(to right bottom, #ffffff 50%, #ff7b7b);
+     overflow: visible;
+ }
+
+
+ .featured-insights h2 {
+     color: black;
+     font-size: 45px;
+     background: linear-gradient(130deg, black, #c33738, #801f20);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .featured-insights h3 {
+     font-size: 29.5px;
+     color: #555;
+ }
+
+ .insight-card {
+     width: 205px;
+     height: 205px;
+     background-size: cover;
+     background-position: center;
+     border-radius: 15px;
+     position: relative;
+     overflow: hidden;
+     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-end;
+     padding: 15px;
+
+ }
+
+ .insight-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
+     z-index: 0;
+     border-radius: 15px;
+     transition: background 0.3s ease, filter 0.3s ease;
+
+
+ }
+
+ .insight-card:hover {
+     backdrop-filter: blur(9px);
+ }
+
+ .insight-card .card-body {
+     position: relative;
+     z-index: 2;
+     padding: 0;
+ }
+
+
+ .insight-card h6 {
+     font-size: 1.2rem;
+     margin-bottom: 5px;
+ }
+
+ .insight-card p {
+     font-size: 0.85rem;
+     margin: 0;
+     text-align: left;
+ }
+
+ .insight-card .btn-outline-light {
+     background-color: var(--primary-color);
+     padding: 4px 8px;
+     font-size: 0.75rem;
+     font-weight: 500;
+     border-radius: 20px;
+     white-space: nowrap;
+ }
+
+ .insight-card .explore-btn {
+     opacity: 0;
+     transition: opacity 0.3s ease;
+ }
+
+ .insight-card:hover .explore-btn {
+     opacity: 1;
+ }
+
+ /* Responsive bootstrap-style card layout for small and medium screens */
+ @media (max-width: 767.98px) {
+     .featured-insights {
+         padding: 80px 20px 50px 20px;
+         gap: 10px;
+     }
+
+     .featured-insights h2 {
+         font-size: 40px;
+     }
+
+     .insight-card {
+         width: 100% !important;
+         height: 190px !important;
+         border-radius: 10px;
+
+     }
+
+     .responsive-insight-container .card {
+         margin-bottom: 20px;
+     }
+
+     .responsive-insight-container .insight-card h6,
+     .responsive-insight-container .insight-card p {
+         text-align: left;
+     }
+ }

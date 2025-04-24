@@ -1,0 +1,131 @@
+.achievements {
+    display: flex;
+    align-items: flex-start;
+    /* Align to the top instead of center */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 50px 90px;
+    gap: 20px;
+    /* Ensure spacing */
+}
+
+.achievements-content {
+    margin: 20px 0;
+    flex: 1;
+    max-width: 45%;
+    min-height: 100%;
+}
+
+.achievements-content h2 {
+    color: var(--primary-color-light);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.achievements-content p {
+    color: black;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* .contact-btn {
+    position: relative;
+    margin-top: 50px;
+    transform: translateY(-50%);
+    padding: 22.4px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--primary-color-light);
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    gap: 11.2px;
+}
+
+.contact-btn:hover {
+    background-color: #ffffff;
+    color: black;
+} */
+
+/* .cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+} */
+
+.stats {
+    margin: 20px 0;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 30px;
+    justify-items: center;
+}
+
+.stat {
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.stat h3 {
+    color: var(--primary-color-light);
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.stat p {
+
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 768px) {
+    .achievements {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        /* Centers content horizontally */
+    }
+
+    .achievements-content {
+        max-width: 100%;
+    }
+
+    .achievements-content p {
+        font-size: 1.2rem;
+        /* text-align: justify; */
+    }
+
+    /* .contact-btn {
+        position: relative;
+        font-size: 15px;
+        padding: 20px 30px;
+    } */
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Center vertically */
+        width: 100%;
+        /* Ensure it takes full width */
+    }
+
+    .stat {
+        width: 100%;
+        max-width: 300px;
+    }
+}
