@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
     <div>
       <Header />
       <Navbar />
-      <main>{children}</main> {/* This will render the page content */}
+      <main>{children}</main>
       <Footer />
     </div>
   );
