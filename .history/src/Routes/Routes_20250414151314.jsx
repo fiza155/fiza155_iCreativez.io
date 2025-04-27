@@ -12,10 +12,10 @@ const routes = createBrowserRouter([
     path: "/about",
     element: <AboutUs />,
   },
-  {
-    path: "*",
-    element: <h2>Page Not Found</h2>,
-  },
+  //   {
+  //     path: "*",
+  //     element: <NotFound />, // Optional 404 page
+  //   },
 ]);
 
 export default routes;

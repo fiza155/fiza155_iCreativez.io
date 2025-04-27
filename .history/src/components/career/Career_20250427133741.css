@@ -4,6 +4,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
+    /* margin-bottom: 100px; */
 }
 
 .image-container {
@@ -13,6 +14,7 @@
 }
 
 .image-container img {
+
     object-fit: contain;
 }
 

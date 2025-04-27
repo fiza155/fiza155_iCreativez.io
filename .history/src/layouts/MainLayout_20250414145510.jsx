@@ -1,3 +1,4 @@
+// src/layouts/MainLayout.jsx
 import React from "react";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
@@ -8,7 +9,7 @@ const MainLayout = ({ children }) => {
     <div>
       <Header />
       <Navbar />
-      <main>{children}</main>
+      <main>{children}</main> {/* This will render the page content */}
       <Footer />
     </div>
   );

@@ -1,9 +1,10 @@
 .testimonial-container {
     position: relative;
-    padding: 80px 0;
+    padding: 60px 0;
     background: #fff;
     width: 100%;
     margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-header {

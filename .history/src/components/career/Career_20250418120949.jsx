@@ -71,6 +71,7 @@ const Career = () => {
           of creativity. Join us to embark on a journey of growth,
           collaboration, and success.
         </p>
+        {/* <button className="join-btn">Join Now</button> */}
         <CustomButton>Join Now</CustomButton>
       </div>
     </div>

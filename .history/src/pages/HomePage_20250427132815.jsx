@@ -35,6 +35,8 @@ function HomePage() {
           <Career />
         </div>
         <ReviewsTestimonial />
+
+        <SuccessAwards />
       </MainLayout>
     </>
   );

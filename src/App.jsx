@@ -1,57 +1,9 @@
-<<<<<<< HEAD
+import React from "react";
 import routes from "./Routes/Routes";
 import { RouterProvider } from "react-router-dom";
 
 function App() {
   return <RouterProvider router={routes} />;
-=======
-import "./App.css";
-import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
-import Hero from "./components/heroSection/Hero";
-// import ParawithCards from "./components/paraAndCards/ParawithCards";
-import OurServices from "./components/cards/OurServices";
-import Marquee from "./components/marquee/Marqueelogo";
-import Footer from "./components/footer/Footer";
-import Achievements from "./components/Acheivments/Acheivments";
-// import SuccessAwards from "./components/SuccessAwards/SucessAwards";
-import ImagesSection from "./components/ImagesSection/ImageSection";
-import Career from "./components/career/Career";
-import Awards from "./components/awards/Awards";
-// import Testimonial from "./components/testimonial/Testimonials";
-import ReviewsTestimonial from "./components/reviews/Reviews";
-import IndustriesSection from "./components/industries/IndustriesSection";
-import FeaturedInsights from "./components/featureInsight/FeaturedInsights";
-function App() {
-  return (
-    <>
-      <Header />
-      <Navbar />
-      <Hero />
-      <OurServices />
-      <IndustriesSection />
-      <FeaturedInsights />
-      <Marquee />
-
-      {/* <ParawithCards /> */}
-
-      <ImagesSection />
-
-      <Awards />
-      {/* <Testimonial /> */}
-
-      <Achievements />
-      <div style={{ height: "200vh" }}>
-        <Career />
-      </div>
-      <ReviewsTestimonial />
-
-      {/* <SuccessAwards /> */}
-
-      <Footer />
-    </>
-  );
->>>>>>> 9672373b2513726c832d9c15179d3c99e7db11e4
 }
 
 export default App;
