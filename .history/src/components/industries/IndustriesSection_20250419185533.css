@@ -1,0 +1,37 @@
+.industry-item {
+    position: relative;
+    transition: padding-left 0.3s ease;
+    cursor: pointer;
+}
+
+.industry-icon {
+    font-size: 3rem;
+    color: var(--primary-color-light);
+
+}
+
+.industry-item:hover {
+    padding-left: 10px;
+}
+
+.industry-item .arrow-icon {
+    font-size: 1.3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--primary-color-light);
+}
+
+.industry-item:hover .arrow-icon {
+    opacity: 1;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #7b7979 !important;
+
+
+}
+
+.border-bottom:hover {
+    border-bottom: 1px solid var(--primary-color-light) !important;
+
+}

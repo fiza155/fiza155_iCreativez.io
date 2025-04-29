@@ -1,0 +1,92 @@
+.contact-form-wrapper {
+    max-width: auto;
+}
+
+.form-heading {
+    color: black;
+    font-size: 45px;
+    background: linear-gradient(130deg, black, #c33738, #801f20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 48.5px;
+    margin-bottom: 10px;
+}
+
+.form-subheading {
+    color: #666;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.form-check-input {
+
+    width: 1.1em;
+    height: 1.1em;
+    margin-top: 0.15em;
+}
+
+/* .form-check-label {
+    font-size: 0.9em;
+} */
+
+input.form-control,
+select.form-select {
+    background-color: #f8fafc;
+    border: 1px solid #ccc;
+
+}
+
+button.btnn-submit {
+    background: linear-gradient(130deg, black, #c33738, #801f20);
+    color: white;
+    border: none;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.icon-wrapper {
+    background-color: #f8fafc;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.icon {
+    font-size: 4.9rem;
+    color: black;
+    font-size: 56px;
+    background: linear-gradient(130deg, black, #c33738, #801f20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-section {
+    padding: 20px;
+}
+
+/* Small adjustments */
+@media (max-width: 768px) {
+    .form-heading {
+        font-size: 2rem;
+    }
+
+    .info-title {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
+
+    button.btnn-submit {
+        padding: 20px 0 0 40px;
+    }
+}

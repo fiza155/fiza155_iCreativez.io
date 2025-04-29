@@ -1,0 +1,86 @@
+.contact-form-wrapper {
+    max-width: 1200px;
+}
+
+.form-heading {
+    color: black;
+    font-size: 45px;
+    background: linear-gradient(130deg, black, #c33738, #801f20);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 48.5px;
+    margin-bottom: 10px;
+}
+
+.form-subheading {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+input.form-control,
+select.form-select {
+    background-color: #f8fafc;
+    border: 1px solid #ccc;
+    height: 50px;
+    font-size: 1rem;
+}
+
+button.btn-primary {
+    background: linear-gradient(130deg, black, #c33738, #801f20);
+    border: none;
+    height: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.icon-wrapper {
+    /* background-color: #f8fafc;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px; */
+}
+
+.icon {
+    font-size: 2.9rem;
+    color: #05606E;
+}
+
+.info-section {
+    padding: 20px;
+}
+
+.info-title {
+    color: #05606E;
+    font-weight: bold;
+    font-size: 48.5px;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    color: #555;
+    font-size: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+/* Small adjustments */
+@media (max-width: 768px) {
+    .form-heading {
+        font-size: 2rem;
+    }
+
+    .info-title {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        font-size: 2rem;
+    }
+}
