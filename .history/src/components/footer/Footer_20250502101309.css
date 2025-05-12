@@ -1,0 +1,168 @@
+.footer {
+    background: linear-gradient(to right Bottom, #fffefe 30%, #f7aaaa);
+    color: black;
+    padding: 40px 20px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.top-footer {
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    max-width: 190px;
+    height: auto;
+    margin-left: -10px;
+
+}
+
+.footer-menu {
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.footer-menu .dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.dropdown-icon {
+    font-size: 16px;
+    color: #c33738;
+}
+
+.footer-menu .dropdown button:hover {
+    text-decoration: underline;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #c33738;
+}
+
+.active-link {
+    color: #c33738;
+    font-weight: bold;
+}
+
+/* Middle Section */
+.footer h5 {
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.contact-icon {
+    font-size: 16px;
+}
+
+.bottom-footer {
+    margin-top: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+.email {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.policy a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+
+.social-icons {
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: black;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #da1313;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: start;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        text-align: start !important;
+    }
+
+    .dropdown-icon {
+        font-size: 12px;
+        color: #c33738;
+    }
+
+    .bottom-footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .footer-logo {
+        max-width: 150px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        text-align: start !important;
+    }
+
+    .dropdown-icon {
+        font-size: 12px;
+        color: #c33738;
+    }
+
+    .bottom-footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+}

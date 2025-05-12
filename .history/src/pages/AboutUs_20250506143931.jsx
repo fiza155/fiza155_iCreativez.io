@@ -1,0 +1,19 @@
+import React from "react";
+import AboutUsImg from "../assets/images/aboutUs/icreativez-story-new.png";
+import MainLayout from "../layouts/MainLayout";
+const AboutUs = () => {
+  return (
+    <>
+      <MainLayout>
+        <img
+          src={AboutUsImg}
+          alt="About Us"
+          className="img-fluid w-100"
+          style={{ height: "100vh", objectFit: "cover", marginTop: "20px" }} // adjust as per navbar height
+        />
+      </MainLayout>
+    </>
+  );
+};
+
+export default AboutUs;

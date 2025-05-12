@@ -1,0 +1,98 @@
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--primary-color-light);
+}
+
+.card-box {
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    padding: 60px 30px 60px;
+    position: relative;
+    background-color: #fff;
+}
+
+.quote-circle {
+    width: 90px;
+    height: 90px;
+    background-color: var(--primary-color-light);
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-icon {
+    font-size: 70px;
+    color: #000;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.mission-text {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .card-box {
+        padding: 40px 20px 30px;
+    }
+
+    .quote-circle {
+        width: 60px;
+        height: 60px;
+        top: -20px;
+        right: 10px;
+    }
+
+    .quote-icon {
+        font-size: 40px;
+    }
+
+    .mission-text {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .card-box {
+        padding: 30px 15px 20px;
+    }
+
+    .quote-circle {
+        width: 50px;
+        height: 50px;
+        top: -15px;
+        right: 5px;
+    }
+
+    .quote-icon {
+        font-size: 30px;
+    }
+
+    .mission-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}

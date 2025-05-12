@@ -1,0 +1,41 @@
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--primary-color-light);
+}
+
+.card-box {
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    padding: 60px 30px 40px;
+    position: relative;
+    background-color: #fff;
+}
+
+.quote-circle {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color-light);
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-icon {
+    font-size: 80px;
+    color: #000;
+}
+
+.mission-text {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    max-width: 1000px;
+    margin: 0 auto;
+}
